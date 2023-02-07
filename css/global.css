@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: fira sans;
+  src: url(../Fira_Sans/FiraSans-Regular.ttf);
+}
+body {
+  font-family: "fira Sans", Arial, Sans-serif;
+  color: #141414;
+}
+a,
+li {
+  text-decoration: none;
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+}
+.subtitulo {
+  font-size: 8rem;
+  text-transform: uppercase;
+  line-height: 1;
+  word-break: break-all;
+  max-width: 4ch;
+}
+@media (max-width: 800px) {
+  .subtitulo {
+    max-width: initial;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: capitalize;
+  }
+}
